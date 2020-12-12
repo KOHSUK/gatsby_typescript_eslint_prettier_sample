@@ -14,6 +14,18 @@
     "prettier/react"
   ],
   "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -33,7 +45,18 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-var-requires": "off",
     "react/no-danger": "off",
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "globals": {
     "__PATH_PREFIX__": true
