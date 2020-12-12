@@ -24,6 +24,18 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "no-use-before-define": "off",
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "react/no-danger": "off",
+    "react/no-unescaped-entities": "off"
+  },
+  "globals": {
+    "__PATH_PREFIX__": true
   }
 }
